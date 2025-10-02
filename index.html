@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">ELHABIAN</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="gradient-text">Abdelrahman Elhabian</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Frontend Developer & AI Enthusiast</h2>
+                        <p class="hero-description">
+                            Computer Science student passionate about creating beautiful web experiences with React,
+                            exploring cloud technologies, and diving deep into Machine Learning & Deep Learning.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <div class="profile-image">
+                                <img src="../images/profile.jpg" alt="Profile Picture" class="profile-img">
+                                <div class="profile-ring"></div>
+                                <div class="profile-ring-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <a href="#about" class="scroll-arrow"></a>
+                </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about technology and continuous learning</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a Computer Science student with a passion for frontend development and emerging
+                            technologies.
+                            My journey in tech spans across multiple domains - from crafting responsive web applications
+                            with React
+                            to exploring the vast possibilities of cloud computing.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Computer Science Student</h4>
+                                    <p>Currently pursuing my degree with focus on software engineering and AI</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <h4>AWS Cloud Practitioner</h4>
+                                    <p>Certified in cloud computing fundamentals and AWS services</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>ML/DL Enthusiast</h4>
+                                    <p>Currently expanding into Machine Learning and Deep Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-profile">
+                            <img src="../images/profile.jpg" alt="About Me" class="about-img">
+                            <div class="about-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Certification</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">My technical expertise across different domains</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fab fa-react"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud Computing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">AWS Services</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Cloud Architecture</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">DevOps Basics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>ML & Deep Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Machine Learning</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Deep Learning</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work and learning projects</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/slider.png" alt="Images Slider App" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.linkedin.com/posts/abdelrahmanelhabian_webdevelopment-frontend-javascript-activity-7371643427668729856-Kbzp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAErzd3oB96inydStqWt1hWDhB3T7ZA6rU48"
+                                        class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Abdelrahman-Elhabian/Images-Slider" class="project-link"
+                                        target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Images Slider App</h3>
+                            <p class="project-description">
+                                An interactive image slider built with React featuring smooth transitions, navigation
+                                controls,
+                                and automatic slideshow functionality. Includes thumbnail preview and responsive design
+                                for all devices.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/typing.png" alt="Typing Speed Test Game" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Abdelrahman-Elhabian/Typing-Speed-Test-Game"
+                                        class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Typing Speed Test Game</h3>
+                            <p class="project-description">
+                                A fun and challenging typing speed test game that measures words per minute (WPM) and
+                                accuracy.
+                                Features real-time statistics, multiple difficulty levels, and a clean, user-friendly
+                                interface.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../images/tiktak.png" alt="Tic Tac Toe Game" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Abdelrahman-Elhabian/Tic-Tac-Toe-Game"
+                                        class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tic Tac Toe Game</h3>
+                            <p class="project-description">
+                                A classic Tic Tac Toe game with an intelligent AI opponent. Features multiple game
+                                modes,
+                                score tracking, and smooth animations. Built with vanilla JavaScript for optimal
+                                performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hippo5.elhabian@gmail.com">My Email</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/abdelrahmanelhabian/">My LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Abdelrahman-Elhabian">My Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="from_name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="from_email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abdelrahman Elhabian. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="mailto:hippo5.elhabian@gmail.com" class="social-link" target="_blank"
+                        rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/abdelrahmanelhabian/" class="social-link" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Abdelrahman-Elhabian" class="social-link" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/201031016677" class="social-link" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
